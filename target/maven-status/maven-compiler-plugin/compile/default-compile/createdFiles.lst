@@ -1,0 +1,15 @@
+demo\tusfinanzas\config\Mapper.class
+demo\tusfinanzas\persona\application\PersonaController.class
+demo\tusfinanzas\transaccion\domain\Transaccion.class
+demo\tusfinanzas\persona\domain\Persona.class
+demo\tusfinanzas\persona\domain\Roles.class
+demo\tusfinanzas\exceptions\ResourceNotFoundException.class
+demo\tusfinanzas\persona\Dto\nuevaPersonaDto.class
+demo\tusfinanzas\transaccion\domain\TransaccionService.class
+demo\tusfinanzas\transaccion\application\transaccionController.class
+demo\tusfinanzas\TusFinanzasApplication.class
+demo\tusfinanzas\GlobalExceptionHandler.class
+demo\tusfinanzas\transaccion\infrastructure\TransaccionRepository.class
+demo\tusfinanzas\persona\domain\PersonaService.class
+demo\tusfinanzas\transaccion\dto\transaccionDto.class
+demo\tusfinanzas\persona\infrastructure\PersonaRepository.class

@@ -1,0 +1,15 @@
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\domain\Persona.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\domain\Roles.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\infrastructure\PersonaRepository.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\GlobalExceptionHandler.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\domain\PersonaService.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\transaccion\dto\transaccionDto.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\transaccion\domain\Transaccion.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\transaccion\infrastructure\TransaccionRepository.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\transaccion\application\transaccionController.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\transaccion\domain\TransaccionService.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\TusFinanzasApplication.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\Dto\nuevaPersonaDto.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\config\Mapper.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\exceptions\ResourceNotFoundException.java
+C:\Users\micha\Documents\Computer_Science\TusFinanzas\src\main\java\demo\tusfinanzas\persona\application\PersonaController.java
