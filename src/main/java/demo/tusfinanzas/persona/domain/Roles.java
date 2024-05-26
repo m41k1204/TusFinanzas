@@ -1,2 +1,5 @@
-package demo.tusfinanzas.persona.domain;public enum Roles {
+package demo.tusfinanzas.persona.domain;
+
+public enum Roles {
+    ADMIN, OWNER
 }
