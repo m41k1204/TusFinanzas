@@ -1,5 +1,6 @@
 package demo.tusfinanzas.persona.application;
 
+import demo.tusfinanzas.persona.Dto.PersonaResponseDto;
 import demo.tusfinanzas.persona.Dto.nuevaPersonaDto;
 import demo.tusfinanzas.persona.domain.Persona;
 import demo.tusfinanzas.persona.domain.PersonaService;
@@ -21,9 +22,8 @@ public class PersonaController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Persona> getPersona(@PathVariable Long id) {
-        Persona persona = personaService.getPersona(id);
-        return ResponseEntity.ok(persona);
+    public ResponseEntity<PersonaResponseDto> getPersona(@PathVariable Long id) {
+        return ResponseEntity.ok(personaService.getPersona(id));
     }
 
 }

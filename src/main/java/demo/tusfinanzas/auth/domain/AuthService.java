@@ -54,6 +54,7 @@ public class AuthService {
         Persona persona = modelMapper.map(req, Persona.class);
         persona.setCuenta(0.0);
         persona.setRole(Roles.OWNER);
+        persona.setPassword(passwordEncoder.encode(req.getPassword()));
         userRepository.save(persona);
 
         JwtAuthResponse response = new JwtAuthResponse();
