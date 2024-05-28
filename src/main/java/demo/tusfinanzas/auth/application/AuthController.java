@@ -36,7 +36,6 @@ public class AuthController {
         return ResponseEntity.ok(authService.register(req));
     }
 
-
     @PostMapping("/nueva")
     public ResponseEntity<Void> newTransaccion(@RequestBody transaccionDto transaccionDto) {
         transaccionService.newTransaccion(transaccionDto);
