@@ -33,6 +33,7 @@ public class SecurityConfig {
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(auth ->
                         auth.requestMatchers("/auth/**").permitAll()
+                                .requestMatchers("/transaccion").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .build();

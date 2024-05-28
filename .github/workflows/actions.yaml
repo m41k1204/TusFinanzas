@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t tusfinanzas-app .
+          docker build -t tus-finanzas-app .
 
       - name: Tag Docker image
         env:
