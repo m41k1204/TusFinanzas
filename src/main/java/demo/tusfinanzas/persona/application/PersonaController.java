@@ -26,4 +26,10 @@ public class PersonaController {
         return ResponseEntity.ok(personaService.getPersona(id));
     }
 
+    @DeleteMapping("/eliminar")
+    public ResponseEntity<Void> deleteAll() {
+        personaService.deleteAllTransacciones();
+        return ResponseEntity.noContent().build();
+    }
+
 }

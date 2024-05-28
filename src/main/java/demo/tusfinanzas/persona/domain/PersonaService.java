@@ -5,7 +5,9 @@ import demo.tusfinanzas.persona.Dto.PersonaResponseDto;
 import demo.tusfinanzas.persona.Dto.nuevaPersonaDto;
 import demo.tusfinanzas.persona.infrastructure.PersonaRepository;
 import demo.tusfinanzas.transaccion.domain.Transaccion;
+import demo.tusfinanzas.transaccion.domain.TransaccionService;
 import demo.tusfinanzas.transaccion.dto.TransaccionResponseDto;
+import demo.tusfinanzas.transaccion.infrastructure.TransaccionRepository;
 import org.apache.catalina.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +26,9 @@ public class PersonaService {
 
     @Autowired
     private PersonaRepository personaRepository;
+
+    @Autowired
+    private TransaccionRepository transaccionRepository;
 
     @Autowired
     ModelMapper modelMapper;
@@ -45,6 +50,10 @@ public class PersonaService {
         return response;
     }
 
+    public void deleteAllTransacciones() {
+        transaccionRepository.deleteAll();
+    }
+
     @Bean(name = "UserDetailsService")
     public UserDetailsService userDetailsService() {
         return username -> {
@@ -54,5 +63,6 @@ public class PersonaService {
             return (UserDetails) user;
         };
     }
+
 
 }
