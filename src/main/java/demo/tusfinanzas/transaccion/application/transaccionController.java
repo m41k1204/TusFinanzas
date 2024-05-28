@@ -14,16 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/transaccion")
 public class transaccionController {
 
-    @Autowired
-    TransaccionService transaccionService;
 
 
 
-    @PostMapping("/nueva")
-    public ResponseEntity<Void> newTransaccion(@RequestBody transaccionDto transaccionDto) {
-        transaccionService.newTransaccion(transaccionDto);
-        return ResponseEntity.ok().build();
-    }
 
 
 }
