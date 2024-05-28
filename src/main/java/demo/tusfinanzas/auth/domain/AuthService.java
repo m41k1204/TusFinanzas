@@ -5,6 +5,7 @@ import demo.tusfinanzas.auth.dto.JwtAuthResponse;
 import demo.tusfinanzas.auth.dto.LoginReq;
 import demo.tusfinanzas.auth.dto.RegisterReq;
 import demo.tusfinanzas.config.JwtService;
+import demo.tusfinanzas.exceptions.ResourceAlreadyExistsException;
 import demo.tusfinanzas.exceptions.ResourceNotFoundException;
 import demo.tusfinanzas.persona.domain.Persona;
 import demo.tusfinanzas.persona.domain.Roles;
@@ -50,7 +51,7 @@ public class AuthService {
 
     public JwtAuthResponse register(RegisterReq req){
         Optional<Persona> user = userRepository.findByEmail(req.getEmail());
-        if (user.isPresent()) throw new ResourceNotFoundException("Email is already registered");
+        if (user.isPresent()) throw new ResourceAlreadyExistsException("Email is already registered");
         Persona persona = modelMapper.map(req, Persona.class);
         persona.setCuenta(0.0);
         persona.setRole(Roles.OWNER);
