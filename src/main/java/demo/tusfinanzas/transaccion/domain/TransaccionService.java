@@ -36,6 +36,9 @@ public class TransaccionService {
         transaccionRepository.save(nuevaTransaccion);
     }
 
+    public void deleteAllTransacciones() {
+        transaccionRepository.deleteAll();
+    }
 
 
 }

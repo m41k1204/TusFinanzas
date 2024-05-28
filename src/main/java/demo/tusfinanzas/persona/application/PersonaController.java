@@ -15,21 +15,11 @@ public class PersonaController {
     @Autowired
     PersonaService personaService;
 
-    @PostMapping("/nueva")
-    public ResponseEntity<Void> newPersona(@RequestBody nuevaPersonaDto personaDto) {
-        personaService.newPersona(personaDto);
-        return ResponseEntity.created(null).build();
-    }
-
     @GetMapping("/{id}")
     public ResponseEntity<PersonaResponseDto> getPersona(@PathVariable Long id) {
         return ResponseEntity.ok(personaService.getPersona(id));
     }
 
-    @DeleteMapping("/eliminar")
-    public ResponseEntity<Void> deleteAll() {
-        personaService.deleteAllTransacciones();
-        return ResponseEntity.noContent().build();
-    }
+
 
 }

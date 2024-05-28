@@ -32,11 +32,7 @@ public class PersonaService {
 
     @Autowired
     ModelMapper modelMapper;
-    public void newPersona(nuevaPersonaDto personaDto) {
-        Persona persona = modelMapper.map(personaDto, Persona.class);
-        persona.setCuenta(0.0);
-        personaRepository.save(persona);
-    }
+
 
     public PersonaResponseDto getPersona(Long id) {
         Persona persona =  personaRepository.findById(id).orElseThrow(
@@ -50,9 +46,6 @@ public class PersonaService {
         return response;
     }
 
-    public void deleteAllTransacciones() {
-        transaccionRepository.deleteAll();
-    }
 
     @Bean(name = "UserDetailsService")
     public UserDetailsService userDetailsService() {
