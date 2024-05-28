@@ -26,6 +26,9 @@ public class AuthController {
         return "La nube funciona!";
     }
 
+
+
+
     @PostMapping("/login")
     public ResponseEntity<JwtAuthResponse> login(@RequestBody LoginReq req) {
         return ResponseEntity.ok(authService.login(req));
