@@ -17,6 +17,7 @@ public class transaccionController {
     @Autowired
     TransaccionService transaccionService;
 
+
     @PostMapping("/nueva")
     public ResponseEntity<Void> newTransaccion(@RequestBody transaccionDto transaccionDto) {
         transaccionService.newTransaccion(transaccionDto);
